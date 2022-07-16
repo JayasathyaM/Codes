@@ -1,0 +1,23 @@
+key = "the quick brown fox jumps over the lazy dog"
+message = "vkbs bs t suepuv"
+use=""
+res=""
+count=97
+for i in key:
+    if i in use:
+        continue
+    if i==" ":
+        continue
+    else:
+        use+=i
+for j in message:
+    if j==" ":
+        res+=" "
+    else:
+        for k in use:
+            if j==k:
+                a=chr(count)
+                res+=a
+            count+=1
+    count=97
+print (res)
